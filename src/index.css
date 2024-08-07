@@ -1,13 +1,113 @@
-body {
+/* Universal Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Body Styling */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper Styling */
+.wrapper {
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+}
+
+/* Text Input Styling */
+.text-input {
+  display: flex;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+/* To-text Styling */
+.to-text {
+  border-radius: 0 10px 10px 0;
+  border-left: 1px solid #d1d1d1;
+}
+
+/* Textarea Styling */
+textarea {
+  height: 250px;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+textarea::placeholder {
+  color: #a0a0a0;
+}
+
+/* Control Elements Styling */
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;    
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Icons Styling */
+.controls .row .icons i {
+  width: 40px;
+  font-size: 16px;
+  color: #a0a0a0;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid #d1d1d1;
+}
+
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid #d1d1d1;
+}
+
+/* Select Styling */
+select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0 20px 0 15px;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  background: #007bff;
 }
